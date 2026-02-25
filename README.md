@@ -22,7 +22,7 @@ A React-based decentralized application (dApp) that connects to the **Freighter 
 
 ### 🔧 Installation
 
-```bash
+
 npm install
 npm start
 
