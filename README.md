@@ -30,7 +30,7 @@ The app runs at:
 
 http://localhost:3000
 ---
- ✨ Features
+ ## ✨ Features
 
 🔗 Connect to Freighter wallet
 
@@ -45,8 +45,11 @@ http://localhost:3000
 ⚠️ Error handling implemented
 
 🎨 Clean and responsive UI
+
 ---
- 📁 Project Structure
+## 📁 Project Structure
+
+```bash
 src/
 │
 ├── components/
@@ -55,16 +58,17 @@ src/
 │   └── TransactionHistory.js
 │
 └── App.js
----
-🔹 Key Files
+```
+## Key Files
 
 Freighter.js → Freighter helpers + Horizon server setup
 
 Header.js → Wallet connect/disconnect + balance display
 
 TransactionHistory.js → Fetches and displays recent transactions
+
 ---
-📸 Screenshots
+## 📸 Screenshots
 🖥️ Wallet Connected State
 
 Displays:
@@ -77,22 +81,25 @@ Recent transactions
 <img width="1917" height="967" alt="app-ui" src="https://github.com/user-attachments/assets/059de837-189d-46d0-a5e6-31bd2869e8e4" />
 
 
-🌐 Testnet Transaction Example
+## 🌐 Testnet Transaction Example
 
 Example of a transaction confirmed on the Stellar Testnet explorer.
 
 <img width="1912" height="970" alt="testnet-transaction" src="https://github.com/user-attachments/assets/f284d788-de82-4aef-885e-12a01a3b249d" />
+
 ---
-🧪 Build & Test
+## 🧪 Build & Test
 
 Run tests:
 
 npm test
 
 Create production build:
----
+
 npm run build
-🔒 Security Notes
+
+---
+## 🔒 Security Notes
 
 This app uses the Stellar Testnet Horizon endpoint
 
@@ -101,8 +108,9 @@ Freighter manages private keys securely in the browser
 No private keys are stored in the application
 
 All blockchain data is fetched directly from Stellar Horizon API
+
 ---
-🌐 Network Details
+## 🌐 Network Details
 
 Horizon Server: https://horizon-testnet.stellar.org
 
