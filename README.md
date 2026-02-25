@@ -1,49 +1,69 @@
-README
-Stellar Wallet History (Freighter)
+# ⭐ Stellar Wallet History (Freighter)
 
-A small React demo that connects to a Freighter wallet and displays the connected account’s XLM balance along with recent transaction history on the Stellar Testnet.
+![React](https://img.shields.io/badge/Frontend-React-blue)
+![Stellar](https://img.shields.io/badge/Blockchain-Stellar-purple)
+![Network](https://img.shields.io/badge/Network-Testnet-orange)
+![Wallet](https://img.shields.io/badge/Wallet-Freighter-green)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-🚀 Quick start
-Prerequisites
+A React-based decentralized application (dApp) that connects to the **Freighter Wallet** and displays the connected account’s **XLM balance** and **recent transaction history** on the **Stellar Testnet**.
 
-Node.js (recommended v16+)
+---
 
-Freighter browser extension (installed and set to Testnet)
+## 🚀 Quick Start
 
-Install and run
+### 📌 Prerequisites
+
+- Node.js (v16+ recommended)
+- Freighter browser extension
+- Freighter set to **Stellar Testnet**
+
+---
+
+### 🔧 Installation
+
+```bash
 npm install
 npm start
 
-The development server runs at:
+The app runs at:
 
 http://localhost:3000
 ✨ Features
 
-Connect with Freighter wallet
+🔗 Connect to Freighter wallet
 
-Disconnect wallet functionality
+🔌 Disconnect wallet
 
-Display connected public key (truncated format)
+🔑 Display connected public key (truncated)
 
-Fetch and show XLM balance
+💰 Fetch and show XLM balance
 
-Transaction History Viewer — fetches recent transactions from Horizon (Testnet)
+📜 Transaction History Viewer (via Horizon Testnet API)
 
-Clean and responsive UI
+⚠️ Error handling implemented
 
-Proper error handling
+🎨 Clean and responsive UI
 
-📁 Key files
+📁 Project Structure
+src/
+│
+├── components/
+│   ├── Freighter.js
+│   ├── Header.js
+│   └── TransactionHistory.js
+│
+└── App.js
+🔹 Key Files
 
-src/components/Freighter.js — Freighter helpers and Horizon Testnet server setup
+Freighter.js → Freighter helpers + Horizon server setup
 
-src/components/Header.js — Wallet connect/disconnect and balance display
+Header.js → Wallet connect/disconnect + balance display
 
-src/components/TransactionHistory.js — Fetches and renders recent transactions
+TransactionHistory.js → Fetches and displays recent transactions
 
 📸 Screenshots
-Wallet Connected State
-<p align="center"> <img src="screenshots/app-ui.png" width="800"/> </p>
+🖥️ Wallet Connected State
 
 Displays:
 
@@ -51,14 +71,13 @@ Connected public key
 
 XLM balance
 
-Recent transaction history
+Recent transactions
 
-Testnet Transaction Example
-<p align="center"> <img src="screenshots/testnet-transaction.png" width="800"/> </p>
+🌐 Testnet Transaction Example
 
 Example of a transaction confirmed on the Stellar Testnet explorer.
 
-✅ Tests & Build
+🧪 Build & Test
 
 Run tests:
 
@@ -67,12 +86,20 @@ npm test
 Create production build:
 
 npm run build
-🔒 Notes
+🔒 Security Notes
 
-This application uses the Stellar Testnet Horizon endpoint.
+This app uses the Stellar Testnet Horizon endpoint
 
-Freighter manages private keys and signing securely in the browser.
+Freighter manages private keys securely in the browser
 
-The application never stores or exposes private keys.
+No private keys are stored in the application
 
-All blockchain data is fetched directly from the Stellar Horizon API.
+All blockchain data is fetched directly from Stellar Horizon API
+
+🌐 Network Details
+
+Horizon Server: https://horizon-testnet.stellar.org
+
+Network: Stellar Testnet
+
+Wallet: Freighter
