@@ -25,10 +25,11 @@ A React-based decentralized application (dApp) that connects to the **Freighter 
 
 npm install
 npm start
-
+---
 The app runs at:
 
 http://localhost:3000
+---
  ✨ Features
 
 🔗 Connect to Freighter wallet
@@ -44,7 +45,7 @@ http://localhost:3000
 ⚠️ Error handling implemented
 
 🎨 Clean and responsive UI
-
+---
  📁 Project Structure
 src/
 │
@@ -54,6 +55,7 @@ src/
 │   └── TransactionHistory.js
 │
 └── App.js
+---
 🔹 Key Files
 
 Freighter.js → Freighter helpers + Horizon server setup
@@ -61,7 +63,7 @@ Freighter.js → Freighter helpers + Horizon server setup
 Header.js → Wallet connect/disconnect + balance display
 
 TransactionHistory.js → Fetches and displays recent transactions
-
+---
 📸 Screenshots
 🖥️ Wallet Connected State
 
@@ -80,7 +82,7 @@ Recent transactions
 Example of a transaction confirmed on the Stellar Testnet explorer.
 
 <img width="1912" height="970" alt="testnet-transaction" src="https://github.com/user-attachments/assets/f284d788-de82-4aef-885e-12a01a3b249d" />
-
+---
 🧪 Build & Test
 
 Run tests:
@@ -88,7 +90,7 @@ Run tests:
 npm test
 
 Create production build:
-
+---
 npm run build
 🔒 Security Notes
 
@@ -99,7 +101,7 @@ Freighter manages private keys securely in the browser
 No private keys are stored in the application
 
 All blockchain data is fetched directly from Stellar Horizon API
-
+---
 🌐 Network Details
 
 Horizon Server: https://horizon-testnet.stellar.org
